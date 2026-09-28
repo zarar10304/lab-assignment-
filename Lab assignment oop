@@ -1,0 +1,162 @@
+#task 1
+class circle{
+   private int radius;
+
+    public circle(){
+        radius=23;
+    }
+    public circle(int a){
+        radius=a;
+    }
+    public void display(){
+        System.out.println("radius of circle is:"+radius);
+    }
+    public double circumference(){
+        return (2*Math.PI*radius);
+    }
+}
+public class circles{
+    public static void main(String[] args){
+        circle C1=new circle(23);
+        C1.display();
+        System.out.println(C1.circumference());
+
+    }
+}
+
+#task2
+class account{
+   private int balance;
+   private int withdraww;
+   private int deposit;
+
+   public account(){
+       balance=23000;
+       withdraww=10000;
+       deposit=14000;
+   }
+   public account(int b,int w,int d){
+       balance=b;
+       withdraww=w;
+       deposit=d;
+   }
+   public void display(){
+       System.out.println("your balance is:"+balance);
+   }
+   public int withdraw(){
+      return (balance=balance-withdraww);
+   }
+   public int deposited(){
+      return (balance=deposit+balance);
+   }
+}
+public class accounts{
+    public static void main(String[] args){
+        account A1=new account();
+        A1.display();
+        System.out.println(A1.withdraw());
+        System.out.println(A1.deposited());
+    }
+
+}
+
+#task3
+class distance{
+   private int feet;
+   private int inches;
+
+   public distance(){
+       feet=25;
+       inches=300;
+   }
+   public distance(int f,int i){
+       feet=f;
+       inches=i;
+   }
+   public void display(){
+       System.out.println("distance in feets:"+feet+"\n"+"inches:"+inches);
+   }
+   public int inch(){
+       return (feet*12);
+   }
+   public int feets(){
+       return (inches/12);
+   }
+}
+public class distances{
+    public static void main(String[] args){
+        distance D1=new distance();
+        System.out.println(D1.feets());
+        System.out.println(D1.inch());
+        D1.display();
+
+    }
+}
+
+#task4
+class mark{
+    private int eng;
+    private int maths;
+    private int cs;
+
+    public void mark(){
+        eng=50;
+        maths=54;
+        cs=59;
+    }
+    public void mark(int e,int m,int c){
+        eng=e;
+        maths=m;
+        cs=c;
+    }
+    public void display(){
+        System.out.println("your score out of 60 is:"+eng+maths+cs);
+    }
+    public int total(){
+        return (eng+maths+cs);
+    }
+    public double percent(){
+        return ((double)total()/180*100);
+    }
+}
+public class marks{
+    public static void main(String[] args){
+        mark S1=new mark();
+        S1.display();
+        S1.mark(52,54,57);
+        System.out.println(S1.total());
+        System.out.println(S1.percent());
+    }
+}
+
+#task5
+
+class Time{
+    private String hour;
+    private String min;
+    private String seconds;
+
+    public Time(){
+        hour="12:00am";
+        min="45mins";
+        seconds="22secs";
+    }
+    public Time(String h,String m,String s){
+        hour=h;
+        min=m;
+        seconds=s;
+    }
+  public void display(){
+        System.out.println("Time in hours:"+hour+"\n"+"Time in minutes:"+min+"\n"+"Time in seconds:"+seconds);
+
+  }
+  public void check(){
+        System.out.println("Time should be valid");
+  }
+}
+public class Times{
+    public static void main(String[] args){
+        Time T1=new Time();
+        T1.display();
+    }
+} task 5
